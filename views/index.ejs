@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/stylesheets/bootstrap-theme.min.css'/>
+    
+  </head>
+  <body>
+  <div style="margin-left:30px">
+    <h1>Enter your post</h1>
+    <form action="/" method="post">
+     	<textarea type="text" name="post" rows="6" cols="100" placholder="write your post" style="display:block; margin-bottom:20px" ></textarea>
+      <%- recaptcha_form %>
+    	<input type="Submit" value="Post" class="btn btn-primary btn-lg " style="margin-top:30px"/>
+     </form>
+ </div>
+    
+   <script src='/javascripts/jquery-1.11.1.min.js'></script>
+    <script src='/javascripts/bootstrap.min.js'></script>
+  </body>
+</html>
